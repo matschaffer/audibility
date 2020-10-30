@@ -1,0 +1,10 @@
+{
+  "local": {
+    "url": "http://localhost:9200"
+  },
+  "us-east-1": {
+    "url": "...",
+    "user": "...",
+    "pass": "..."
+  }
+}
