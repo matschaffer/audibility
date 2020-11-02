@@ -3,18 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tone.js with webpack</title>
+    <title>Audibility</title>
+    <style type="text/css">
+        .instrument {
+            clear: left;
+        }
+
+        .instrument .field {
+            margin-bottom: 10px;
+        }
+
+        .instrument .parameter {
+            float: left;
+        }
+    </style>
 </head>
 <body>
+<div id="controls">
+    <div class="instrument">
+        <div class="field">
+            <label>
+                Region:
+                <input type="text" name="region" value="us-east-1"/>
+            </label>
+        </div>
 
-<div id="instrument"></div>
+        <div>
+            <label>
+                Index Pattern:
+                <input type="text" name="indexPattern" value="service-allocator-*"/>
+            </label>
+        </div>
 
-<button id="play-button">Play</button>
-
-<label for="scale">
-    <input type="text" id="scale" value="C4 D4 E4 F4 G4 A4 B4"/>
-</label>
-
+        <div class="parameter run"></div>
+        <div class="parameter pan"></div>
+        <div class="parameter offset">
+            <span class="dial"/>
+            <br>
+            <span class="number"/>
+        </div>
+        <div class="parameter notes"></div>
+    </div>
+</div>
 <script src="index.js"></script>
 </body>
 </html>
